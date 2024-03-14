@@ -1,4 +1,5 @@
 import random
+
 def juego_del_dado():
     """
     Esta función tiene que pedirle al usuario que aprete enter para que lance un dado.
@@ -29,5 +30,4 @@ def juego_del_dado():
             ganador="Maquina"
         else:
             ganador="empate"
-    return ganador
-print("El ganador es:",juego_del_dado())
+    print("El ganador es:", ganador)

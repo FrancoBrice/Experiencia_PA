@@ -9,6 +9,7 @@ def memoria():
     Luego, debes pedir al usuario que repita la secuencia.
     Se debe mostrar un mensaje si el usuario acierta o no.
     """
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("Recuerda los siguientes números:")
     time.sleep(3)
 
@@ -21,10 +22,9 @@ def memoria():
         os.system('cls' if os.name == 'nt' else 'clear')
         
     for i in range(5):
-        number_input = int(input(f"ingresa numero que apareciò en la posición: {i + 1}\n"))
+        number_input = int(input(f"ingresa numero que apareció en la posición: {i + 1}\n"))
         print("number_input", number_list[i])
         if number_input == number_list[i]:
             print("Correcto!")
         else: 
             print("incorrecto")
-memoria()
