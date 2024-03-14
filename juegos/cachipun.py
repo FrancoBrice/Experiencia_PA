@@ -9,10 +9,9 @@ def cachipun():
     maquina=random.randint(1,3) 
     print("La maquina eligio:", maquina)
     if maquina==eleccion:
-        return "Empate"
+        print("Empate")
     elif (eleccion==1 and maquina==2) or (eleccion==3 and maquina==1) or (eleccion==2 and maquina==3):
-        return "ganaste"
+        print("ganaste")
     else:
-        return "perdiste"
-print(cachipun())
+        print("perdiste")
 
